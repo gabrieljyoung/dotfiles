@@ -2,6 +2,7 @@
 # Ignore all; only add files forcefully. Would like to avoid pushing my entire home directory.
 *
 !.gitignore
-!.github
-!.github/**/*
-!.bashrc.d/*
+!/.github
+!/.github/**/*
+!/.bashrc.d
+!/.bashrc.d/*
