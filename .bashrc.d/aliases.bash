@@ -30,7 +30,3 @@ alias gst='git status'
 # https://www.atlassian.com/git/tutorials/dotfiles
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 
-
-# alias completion
-# see https://github.com/cykerway/complete-alias
-complete -F _complete_alias "${!BASH_ALIASES[@]}"
