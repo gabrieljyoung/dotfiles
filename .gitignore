@@ -1,0 +1,6 @@
+# For dotfiles repo
+# Ignore all; only add files forcefully. Would like to avoid pushing my entire home directory.
+*
+!.gitignore
+!.github
+!.github/**/*

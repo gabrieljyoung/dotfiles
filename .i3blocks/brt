@@ -1,0 +1,11 @@
+#!/bin/bash
+
+value=$(( $(brightnessctl g) * 100 / 255 ))
+
+if [[ value -eq 100 ]]; then
+	value=99
+fi
+
+echo "BRT <b>$value</b>"
+
+

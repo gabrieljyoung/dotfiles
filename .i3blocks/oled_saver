@@ -1,0 +1,6 @@
+#!/bin/bash
+
+if [[ $(( $( date +%-M ) % 10 )) -eq 6 ]]; then
+    echo "     [screen saver]     "
+fi
+
