@@ -1,0 +1,11 @@
+#!/bin/bash
+
+{ inputplug -dc /bin/echo; } |
+while read event
+do
+	case $event in
+	XISlaveAdded*XIFloatingSlave\ Drop\ Preonic)
+		setxkbmap -layout ck
+		;;
+	esac
+done &

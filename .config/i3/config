@@ -55,9 +55,6 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec alacritty
 
-# TEMP: until I figure out how to detect keyboard connection events
-bindsym $mod+k exec ~/.kb
-
 # kill focused window
 bindsym $mod+w kill
 
@@ -217,10 +214,7 @@ bar {
 
 bindsym $mod+x bar mode toggle laptop
 
-# set CapsLock to repeated backspace
-exec "setxkbmap -layout ck && xset r 66"
-
-
-exec ~/.xrandr/none.sh
+exec ~/.preonic-ck
+exec ~/.xrandr/auto.sh
 exec alacritty
 
