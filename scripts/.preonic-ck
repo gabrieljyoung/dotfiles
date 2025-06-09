@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Resets the layout of "Drop Preonic" to "ck" (custom Colemak) on reconnect.
+# This tends to happen when I shock it from walking over carpets.
+
+{ inputplug -dc /bin/echo; } |
+while read event
+do
+	case $event in
+	XISlaveAdded*XIFloatingSlave\ Drop\ Preonic)
+		setxkbmap -layout ck
+		;;
+	esac
+done &

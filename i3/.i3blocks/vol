@@ -1,0 +1,8 @@
+#!/bin/bash
+
+value_dec=$( wpctl get-volume @DEFAULT_AUDIO_SINK@ | grep -oP 'Volume: \K.*' )
+value="${value_dec//.}"
+
+echo "VOL <b>${value##0}</b>"
+
+

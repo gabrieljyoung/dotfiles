@@ -1,0 +1,17 @@
+#!/bin/bash
+
+elide() {
+	local n=$1 s=$2
+	[[ ${#s} -le $n ]] && echo $s || echo -e "${s:0:$((n-1))}\u2026";
+}
+
+data=$( curl -s http://192.168.0.20/cgi-bin/player.cgi )
+
+track=$( jq -r '.metadata.title' <<< $data )
+artist=$( jq -r '.metadata.artist' <<< $data )
+
+if [[ $track == 'null' || $track == '' ]]; then
+	echo ''
+else
+	echo $(elide 30 "$track") – $(elide 20 "$artist")
+fi

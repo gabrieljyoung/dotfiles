@@ -1,0 +1,7 @@
+#!/bin/bash
+
+value=$( $SCRIPT_DIR/contrib/disk | head -n1 | grep -oP '\d+' )
+
+echo "SSD <b>$value GB</b>"
+
+

@@ -1,0 +1,25 @@
+#!/bin/bash
+
+data=$( upower --dump )
+value=$( grep -oP 'percentage: *\K\d{2,3}' <<< $data | head -n 1 )
+state=$( grep -oP 'state: *\K\w+' <<< $data | head -n 1 )
+
+if [[ $value -eq 100 ]]; then
+	value=99
+fi
+
+if [[ $state == 'charging' ]]; then
+	fg='#000000'
+	bg='#A9DC76'
+elif [[ $value -le 20 ]]; then
+	fg='#000000'
+	bg='#FF6188'
+else
+	fg='#A9DC76'
+	bg='#000000'
+fi
+
+echo "BAT <b>$value</b>"
+echo "BAT <b>$value</b>"
+echo $fg
+echo $bg
