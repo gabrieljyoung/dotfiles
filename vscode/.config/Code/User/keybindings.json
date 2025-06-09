@@ -1,0 +1,15 @@
+// Place your key bindings in this file to override the defaults
+[
+	{
+		"key": "alt+n",
+		"command": "editor.emmet.action.wrapWithAbbreviation"
+	},
+	{
+		"key": "ctrl+shift+s",
+		"command": "workbench.action.files.saveFiles"
+	},
+	{
+		"key": "ctrl+shift+s",
+		"command": "-workbench.action.files.saveAs"
+	}
+]
