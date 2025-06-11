@@ -2,4 +2,5 @@
 size=10
 
 [window]
-dynamic_title=true
+dynamic_title = true
+dimensions = { columns = 100, lines = 40 }
