@@ -5,7 +5,7 @@ elide() {
 	[[ ${#s} -le $n ]] && echo $s || echo -e "${s:0:$((n-1))}\u2026";
 }
 
-data=$( curl -s http://192.168.0.20/cgi-bin/player.cgi )
+data=$( curl -s http://192.168.0.202/cgi-bin/player.cgi )
 
 track=$( jq -r '.metadata.title' <<< $data )
 artist=$( jq -r '.metadata.artist' <<< $data )
