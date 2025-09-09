@@ -1,0 +1,4 @@
+# Global Stow behaviour
+
+# Translate 'dot-' file prefix to an actual dot
+--dotfiles

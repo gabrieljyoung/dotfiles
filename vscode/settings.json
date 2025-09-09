@@ -1,0 +1,155 @@
+{
+  "svelte.enable-ts-plugin": true,
+  "editor.tabSize": 2,
+  "git.autofetch": true,
+  "editor.fontFamily": "JetBrains Mono",
+  "git.confirmSync": false,
+  "files.simpleDialog.enable": true,
+  "debug.console.fontFamily": "JetBrains Mono",
+  "debug.console.fontSize": 13,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit"
+  },
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode",
+    "editor.formatOnSave": true,
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "prettier.requireConfig": true,
+  "workbench.startupEditor": "none",
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "explorer.confirmDragAndDrop": false,
+  "editor.minimap.autohide": true,
+  "[go]": {
+    "editor.insertSpaces": false,
+    "editor.defaultFormatter": "golang.go",
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "file",
+  },
+  "terminal.integrated.shellIntegration.enabled": false,
+  "terminal.integrated.fontFamily": "MesloLGS NF, 'monospace'",
+  "terminal.integrated.fontSize": 12,
+  "window.customTitleBarVisibility": "never",
+  "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 2, ColumnLimit: 100 }",
+  "editor.minimap.enabled": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "todo-tree.general.tags": [
+    "FIXME:",
+    "TEMP:",
+    "TODO:",
+  ],
+  "todo-tree.highlights.customHighlight": {
+    "FIXME:": {
+      "icon": "x-circle-fill",
+      "iconColour": "#f45",
+      "foreground": "#000",
+      "background": "#f45",
+      "fontWeight": "700"
+    },
+    "TEMP:": {
+      "icon": "clock-fill",
+      "iconColour": "#fa2",
+      "foreground": "#000",
+      "background": "#fa2",
+      "fontWeight": "700",
+    },
+    "TODO:": {
+      "icon": "dot",
+      "iconColour": "#aaa",
+      "foreground": "#5ff",
+      "background": "#0000",
+      "fontWeight": "700",
+      "rulerColour": "#5ff",
+    }
+  },
+  "git-graph.graph.colours": [
+    "#ffa600",
+    "#b7ad00",
+    "#70aa2d",
+    "#13a056",
+    "#009175",
+    "#008088",
+    "#006c8b",
+    "#00587d",
+  ],
+  "todo-tree.regex.regex": "($TAGS)",
+  "rewrap.wrappingColumn": 80,
+  "editor.unicodeHighlight.invisibleCharacters": false,
+  "editor.fontLigatures": true,
+  "editor.formatOnSave": true,
+  "go.toolsManagement.autoUpdate": true,
+  "workbench.colorCustomizations": {
+    "gitDecoration.modifiedResourceForeground": "#ccac51",
+    "terminal.ansiBlue": "#2A7BDE",
+    "terminal.ansiBrightBlue": "#2A7BDE",
+    "editor.findMatchHighlightBorder": "#fff",
+  },
+  "git.enableSmartCommit": true,
+  "editor.fontWeight": "300",
+  "editor.fontSize": 12,
+  "git.allowForcePush": true,
+  "git.confirmForcePush": false,
+  "files.associations": {
+    "*.json": "jsonc",
+    "*.sql": "sql"
+  },
+  "[markdown]": {
+    "diffEditor.ignoreTrimWhitespace": true
+  },
+  "terminal.integrated.defaultProfile.linux": "bash",
+  "terminal.integrated.tabs.defaultColor": "terminal.ansiBlack",
+  "workbench.iconTheme": "Monokai Pro Icons",
+  "betterAlign.surroundSpace": {
+    "&": [
+      1,1
+    ],
+    "colon": [
+      0,
+      1
+    ],
+    "assignment": [
+      1,
+      1
+    ],
+    "arrow": [
+      1,
+      1
+    ],
+    "comment": 2
+  },
+  "gopls": {
+    "ui.navigation.importShortcut": "Definition"
+  },
+  "[proto3]": {
+    "editor.formatOnSave": false
+  },
+  "redhat.telemetry.enabled": false,
+  "[xml]": {
+    "editor.defaultFormatter": "DotJoshJohnson.xml"
+  },
+  "git.replaceTagsWhenPull": true,
+  "diffEditor.renderSideBySide": true,
+  "workbench.colorTheme": "Monokai Pro",
+  "extensions.ignoreRecommendations": true,
+  "editor.wordWrap": "on",
+  "chat.agent.enabled": false,
+  "chat.commandCenter.enabled": false,
+  "telemetry.feedback.enabled": false,
+  "workbench.editor.empty.hint": "hidden",
+  "typescript.tsdk": "/home/gabriel/.local/share/pnpm/global/5/node_modules/typescript/lib"
+}
